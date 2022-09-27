@@ -24,7 +24,7 @@ class EmployeeController {
     // tag::get-aggregate-root[]
     @GetMapping("/employees")
     List<Employee> all() {
-        return repository.findAll();
+        return repository.findAll(); //lists employees 
     }
     // end::get-aggregate-root[]
 
