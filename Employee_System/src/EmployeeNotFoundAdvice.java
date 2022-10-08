@@ -13,6 +13,6 @@ class EmployeeNotFoundAdvice {
     @ExceptionHandler(EmployeeNotFoundException.class) //configures the advice to only respond if the Exception is thrown
     @ResponseStatus(HttpStatus.NOT_FOUND) //404
     String employeeNotFoundHandler(EmployeeNotFoundException ex) {
-        return ex.getMessage();
+        return ex.getMessage(); //returns message
     }
 }
